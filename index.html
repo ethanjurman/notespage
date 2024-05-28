@@ -1,0 +1,29 @@
+<html>
+  <style>
+    html {
+      background: url("./background.jpg");
+      background-size: cover;
+    }
+    body {
+      margin: 0px;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border-width: 0px;
+      background: none transparent;
+    }
+  </style>
+  <body>
+    <iframe
+      id="main-iframe"
+      style="display: none"
+      src="https://script.google.com/macros/s/AKfycbzTPXSz0KBzjIn0LY9I9nNrniUW3rKmKvDBF3zfnjecnDJWePSjbuGNCEKqMETOgW7E3w/exec"
+    ></iframe>
+  </body>
+  <script defer>
+    setTimeout(() => {
+      document.getElementById("main-iframe").style.display = "";
+    }, 3500);
+  </script>
+</html>
